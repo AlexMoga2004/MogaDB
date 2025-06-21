@@ -165,6 +165,30 @@ db/page.cpp.s:
 	cd /Users/user/Programming/mogadb/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/mydbms.dir/build.make src/CMakeFiles/mydbms.dir/db/page.cpp.s
 .PHONY : db/page.cpp.s
 
+db/schema.o: db/schema.cpp.o
+.PHONY : db/schema.o
+
+# target to build an object file
+db/schema.cpp.o:
+	cd /Users/user/Programming/mogadb/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/mydbms.dir/build.make src/CMakeFiles/mydbms.dir/db/schema.cpp.o
+.PHONY : db/schema.cpp.o
+
+db/schema.i: db/schema.cpp.i
+.PHONY : db/schema.i
+
+# target to preprocess a source file
+db/schema.cpp.i:
+	cd /Users/user/Programming/mogadb/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/mydbms.dir/build.make src/CMakeFiles/mydbms.dir/db/schema.cpp.i
+.PHONY : db/schema.cpp.i
+
+db/schema.s: db/schema.cpp.s
+.PHONY : db/schema.s
+
+# target to generate assembly for a file
+db/schema.cpp.s:
+	cd /Users/user/Programming/mogadb/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/mydbms.dir/build.make src/CMakeFiles/mydbms.dir/db/schema.cpp.s
+.PHONY : db/schema.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -178,6 +202,9 @@ help:
 	@echo "... db/page.o"
 	@echo "... db/page.i"
 	@echo "... db/page.s"
+	@echo "... db/schema.o"
+	@echo "... db/schema.i"
+	@echo "... db/schema.s"
 .PHONY : help
 
 

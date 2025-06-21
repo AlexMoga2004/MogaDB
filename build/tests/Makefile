@@ -141,6 +141,20 @@ test_page/fast:
 	cd /Users/user/Programming/mogadb/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_page.dir/build.make tests/CMakeFiles/test_page.dir/build
 .PHONY : test_page/fast
 
+# Convenience name for target.
+tests/CMakeFiles/test_schema.dir/rule:
+	cd /Users/user/Programming/mogadb/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/test_schema.dir/rule
+.PHONY : tests/CMakeFiles/test_schema.dir/rule
+
+# Convenience name for target.
+test_schema: tests/CMakeFiles/test_schema.dir/rule
+.PHONY : test_schema
+
+# fast build rule for target.
+test_schema/fast:
+	cd /Users/user/Programming/mogadb/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_schema.dir/build.make tests/CMakeFiles/test_schema.dir/build
+.PHONY : test_schema/fast
+
 test_page.o: test_page.cpp.o
 .PHONY : test_page.o
 
@@ -165,6 +179,30 @@ test_page.cpp.s:
 	cd /Users/user/Programming/mogadb/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_page.dir/build.make tests/CMakeFiles/test_page.dir/test_page.cpp.s
 .PHONY : test_page.cpp.s
 
+test_schema.o: test_schema.cpp.o
+.PHONY : test_schema.o
+
+# target to build an object file
+test_schema.cpp.o:
+	cd /Users/user/Programming/mogadb/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_schema.dir/build.make tests/CMakeFiles/test_schema.dir/test_schema.cpp.o
+.PHONY : test_schema.cpp.o
+
+test_schema.i: test_schema.cpp.i
+.PHONY : test_schema.i
+
+# target to preprocess a source file
+test_schema.cpp.i:
+	cd /Users/user/Programming/mogadb/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_schema.dir/build.make tests/CMakeFiles/test_schema.dir/test_schema.cpp.i
+.PHONY : test_schema.cpp.i
+
+test_schema.s: test_schema.cpp.s
+.PHONY : test_schema.s
+
+# target to generate assembly for a file
+test_schema.cpp.s:
+	cd /Users/user/Programming/mogadb/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_schema.dir/build.make tests/CMakeFiles/test_schema.dir/test_schema.cpp.s
+.PHONY : test_schema.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -175,9 +213,13 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... test"
 	@echo "... test_page"
+	@echo "... test_schema"
 	@echo "... test_page.o"
 	@echo "... test_page.i"
 	@echo "... test_page.s"
+	@echo "... test_schema.o"
+	@echo "... test_schema.i"
+	@echo "... test_schema.s"
 .PHONY : help
 
 

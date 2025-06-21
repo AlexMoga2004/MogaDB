@@ -1,10 +1,10 @@
-Start testing: Jun 21 03:33 BST
+Start testing: Jun 21 11:04 BST
 ----------------------------------------------------------
-1/1 Testing: PageTests
-1/1 Test: PageTests
+1/2 Testing: PageTests
+1/2 Test: PageTests
 Command: "/Users/user/Programming/mogadb/build/tests/test_page"
 Directory: /Users/user/Programming/mogadb/build/tests
-"PageTests" start time: Jun 21 03:33 BST
+"PageTests" start time: Jun 21 11:04 BST
 Output:
 ----------------------------------------------------------
 test_insert_and_get passed
@@ -12,11 +12,49 @@ test_multiple_inserts passed
 test_delete_and_reuse_slot passed
 All tests passed ✅
 <end of output>
-Test time =   0.33 sec
+Test time =   0.34 sec
 ----------------------------------------------------------
 Test Passed.
-"PageTests" end time: Jun 21 03:33 BST
+"PageTests" end time: Jun 21 11:04 BST
 "PageTests" time elapsed: 00:00:00
 ----------------------------------------------------------
 
-End testing: Jun 21 03:33 BST
+2/2 Testing: SchemaTests
+2/2 Test: SchemaTests
+Command: "/Users/user/Programming/mogadb/build/tests/test_schema"
+Directory: /Users/user/Programming/mogadb/build/tests
+"SchemaTests" start time: Jun 21 11:04 BST
+Output:
+----------------------------------------------------------
+Starting all database schema tests...
+
+--- Testing Constraint Constructors ---
+PrimaryKeyConstraint constructor: PASSED
+ForeignKeyConstraint constructor: PASSED
+UniquenessConstraint constructor: PASSED
+NotNullConstraint constructor: PASSED
+--- Constraint Constructors Tests Complete ---
+
+--- Testing Relation Class ---
+Relation constructor: PASSED
+Relation::get_column: PASSED
+Relation::is_primary_key: PASSED
+--- Relation Class Tests Complete ---
+
+--- Testing Schema Class ---
+Schema constructor: PASSED
+Schema::add_relation: PASSED
+Schema::get_relation: PASSED
+Schema::remove_relation: PASSED
+--- Schema Class Tests Complete ---
+
+All tests passed successfully!
+<end of output>
+Test time =   0.27 sec
+----------------------------------------------------------
+Test Passed.
+"SchemaTests" end time: Jun 21 11:04 BST
+"SchemaTests" time elapsed: 00:00:00
+----------------------------------------------------------
+
+End testing: Jun 21 11:04 BST

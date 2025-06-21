@@ -86,17 +86,33 @@ src/CMakeFiles/mydbms.dir/db/page.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/mydbms.dir/db/page.cpp.s"
 	cd /Users/user/Programming/mogadb/build/src && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/user/Programming/mogadb/src/db/page.cpp -o CMakeFiles/mydbms.dir/db/page.cpp.s
 
+src/CMakeFiles/mydbms.dir/db/schema.cpp.o: src/CMakeFiles/mydbms.dir/flags.make
+src/CMakeFiles/mydbms.dir/db/schema.cpp.o: /Users/user/Programming/mogadb/src/db/schema.cpp
+src/CMakeFiles/mydbms.dir/db/schema.cpp.o: src/CMakeFiles/mydbms.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/user/Programming/mogadb/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object src/CMakeFiles/mydbms.dir/db/schema.cpp.o"
+	cd /Users/user/Programming/mogadb/build/src && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/CMakeFiles/mydbms.dir/db/schema.cpp.o -MF CMakeFiles/mydbms.dir/db/schema.cpp.o.d -o CMakeFiles/mydbms.dir/db/schema.cpp.o -c /Users/user/Programming/mogadb/src/db/schema.cpp
+
+src/CMakeFiles/mydbms.dir/db/schema.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/mydbms.dir/db/schema.cpp.i"
+	cd /Users/user/Programming/mogadb/build/src && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/user/Programming/mogadb/src/db/schema.cpp > CMakeFiles/mydbms.dir/db/schema.cpp.i
+
+src/CMakeFiles/mydbms.dir/db/schema.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/mydbms.dir/db/schema.cpp.s"
+	cd /Users/user/Programming/mogadb/build/src && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/user/Programming/mogadb/src/db/schema.cpp -o CMakeFiles/mydbms.dir/db/schema.cpp.s
+
 # Object files for target mydbms
 mydbms_OBJECTS = \
-"CMakeFiles/mydbms.dir/db/page.cpp.o"
+"CMakeFiles/mydbms.dir/db/page.cpp.o" \
+"CMakeFiles/mydbms.dir/db/schema.cpp.o"
 
 # External object files for target mydbms
 mydbms_EXTERNAL_OBJECTS =
 
 src/libmydbms.a: src/CMakeFiles/mydbms.dir/db/page.cpp.o
+src/libmydbms.a: src/CMakeFiles/mydbms.dir/db/schema.cpp.o
 src/libmydbms.a: src/CMakeFiles/mydbms.dir/build.make
 src/libmydbms.a: src/CMakeFiles/mydbms.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/user/Programming/mogadb/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX static library libmydbms.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/user/Programming/mogadb/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX static library libmydbms.a"
 	cd /Users/user/Programming/mogadb/build/src && $(CMAKE_COMMAND) -P CMakeFiles/mydbms.dir/cmake_clean_target.cmake
 	cd /Users/user/Programming/mogadb/build/src && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/mydbms.dir/link.txt --verbose=$(VERBOSE)
 

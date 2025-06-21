@@ -153,6 +153,19 @@ test_page/fast:
 	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_page.dir/build.make tests/CMakeFiles/test_page.dir/build
 .PHONY : test_page/fast
 
+#=============================================================================
+# Target rules for targets named test_schema
+
+# Build rule for target.
+test_schema: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test_schema
+.PHONY : test_schema
+
+# fast build rule for target.
+test_schema/fast:
+	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_schema.dir/build.make tests/CMakeFiles/test_schema.dir/build
+.PHONY : test_schema/fast
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -164,6 +177,7 @@ help:
 	@echo "... test"
 	@echo "... mydbms"
 	@echo "... test_page"
+	@echo "... test_schema"
 .PHONY : help
 
 

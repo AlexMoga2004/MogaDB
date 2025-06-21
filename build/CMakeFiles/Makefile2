@@ -106,10 +106,12 @@ src/clean: src/CMakeFiles/mydbms.dir/clean
 
 # Recursive "all" directory target.
 tests/all: tests/CMakeFiles/test_page.dir/all
+tests/all: tests/CMakeFiles/test_schema.dir/all
 .PHONY : tests/all
 
 # Recursive "codegen" directory target.
 tests/codegen: tests/CMakeFiles/test_page.dir/codegen
+tests/codegen: tests/CMakeFiles/test_schema.dir/codegen
 .PHONY : tests/codegen
 
 # Recursive "preinstall" directory target.
@@ -118,6 +120,7 @@ tests/preinstall:
 
 # Recursive "clean" directory target.
 tests/clean: tests/CMakeFiles/test_page.dir/clean
+tests/clean: tests/CMakeFiles/test_schema.dir/clean
 .PHONY : tests/clean
 
 #=============================================================================
@@ -127,12 +130,12 @@ tests/clean: tests/CMakeFiles/test_page.dir/clean
 src/CMakeFiles/mydbms.dir/all:
 	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/mydbms.dir/build.make src/CMakeFiles/mydbms.dir/depend
 	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/mydbms.dir/build.make src/CMakeFiles/mydbms.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/user/Programming/mogadb/build/CMakeFiles --progress-num=1,2 "Built target mydbms"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/user/Programming/mogadb/build/CMakeFiles --progress-num=1,2,3 "Built target mydbms"
 .PHONY : src/CMakeFiles/mydbms.dir/all
 
 # Build rule for subdir invocation for target.
 src/CMakeFiles/mydbms.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/user/Programming/mogadb/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/user/Programming/mogadb/build/CMakeFiles 3
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/CMakeFiles/mydbms.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/user/Programming/mogadb/build/CMakeFiles 0
 .PHONY : src/CMakeFiles/mydbms.dir/rule
@@ -144,7 +147,7 @@ mydbms: src/CMakeFiles/mydbms.dir/rule
 # codegen rule for target.
 src/CMakeFiles/mydbms.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/mydbms.dir/build.make src/CMakeFiles/mydbms.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/user/Programming/mogadb/build/CMakeFiles --progress-num=1,2 "Finished codegen for target mydbms"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/user/Programming/mogadb/build/CMakeFiles --progress-num=1,2,3 "Finished codegen for target mydbms"
 .PHONY : src/CMakeFiles/mydbms.dir/codegen
 
 # clean rule for target.
@@ -159,12 +162,12 @@ src/CMakeFiles/mydbms.dir/clean:
 tests/CMakeFiles/test_page.dir/all: src/CMakeFiles/mydbms.dir/all
 	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_page.dir/build.make tests/CMakeFiles/test_page.dir/depend
 	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_page.dir/build.make tests/CMakeFiles/test_page.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/user/Programming/mogadb/build/CMakeFiles --progress-num=3,4 "Built target test_page"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/user/Programming/mogadb/build/CMakeFiles --progress-num=4,5 "Built target test_page"
 .PHONY : tests/CMakeFiles/test_page.dir/all
 
 # Build rule for subdir invocation for target.
 tests/CMakeFiles/test_page.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/user/Programming/mogadb/build/CMakeFiles 4
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/user/Programming/mogadb/build/CMakeFiles 5
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/test_page.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/user/Programming/mogadb/build/CMakeFiles 0
 .PHONY : tests/CMakeFiles/test_page.dir/rule
@@ -176,13 +179,45 @@ test_page: tests/CMakeFiles/test_page.dir/rule
 # codegen rule for target.
 tests/CMakeFiles/test_page.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_page.dir/build.make tests/CMakeFiles/test_page.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/user/Programming/mogadb/build/CMakeFiles --progress-num=3,4 "Finished codegen for target test_page"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/user/Programming/mogadb/build/CMakeFiles --progress-num=4,5 "Finished codegen for target test_page"
 .PHONY : tests/CMakeFiles/test_page.dir/codegen
 
 # clean rule for target.
 tests/CMakeFiles/test_page.dir/clean:
 	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_page.dir/build.make tests/CMakeFiles/test_page.dir/clean
 .PHONY : tests/CMakeFiles/test_page.dir/clean
+
+#=============================================================================
+# Target rules for target tests/CMakeFiles/test_schema.dir
+
+# All Build rule for target.
+tests/CMakeFiles/test_schema.dir/all: src/CMakeFiles/mydbms.dir/all
+	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_schema.dir/build.make tests/CMakeFiles/test_schema.dir/depend
+	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_schema.dir/build.make tests/CMakeFiles/test_schema.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/user/Programming/mogadb/build/CMakeFiles --progress-num=6,7 "Built target test_schema"
+.PHONY : tests/CMakeFiles/test_schema.dir/all
+
+# Build rule for subdir invocation for target.
+tests/CMakeFiles/test_schema.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/user/Programming/mogadb/build/CMakeFiles 5
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/test_schema.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/user/Programming/mogadb/build/CMakeFiles 0
+.PHONY : tests/CMakeFiles/test_schema.dir/rule
+
+# Convenience name for target.
+test_schema: tests/CMakeFiles/test_schema.dir/rule
+.PHONY : test_schema
+
+# codegen rule for target.
+tests/CMakeFiles/test_schema.dir/codegen:
+	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_schema.dir/build.make tests/CMakeFiles/test_schema.dir/codegen
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/user/Programming/mogadb/build/CMakeFiles --progress-num=6,7 "Finished codegen for target test_schema"
+.PHONY : tests/CMakeFiles/test_schema.dir/codegen
+
+# clean rule for target.
+tests/CMakeFiles/test_schema.dir/clean:
+	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_schema.dir/build.make tests/CMakeFiles/test_schema.dir/clean
+.PHONY : tests/CMakeFiles/test_schema.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

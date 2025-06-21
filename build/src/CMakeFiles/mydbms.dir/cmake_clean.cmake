@@ -1,6 +1,8 @@
 file(REMOVE_RECURSE
   "CMakeFiles/mydbms.dir/db/page.cpp.o"
   "CMakeFiles/mydbms.dir/db/page.cpp.o.d"
+  "CMakeFiles/mydbms.dir/db/schema.cpp.o"
+  "CMakeFiles/mydbms.dir/db/schema.cpp.o.d"
   "libmydbms.a"
   "libmydbms.pdb"
 )

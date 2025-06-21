@@ -9,6 +9,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/Users/user/Programming/mogadb/src/db/page.cpp" "src/CMakeFiles/mydbms.dir/db/page.cpp.o" "gcc" "src/CMakeFiles/mydbms.dir/db/page.cpp.o.d"
+  "/Users/user/Programming/mogadb/src/db/schema.cpp" "src/CMakeFiles/mydbms.dir/db/schema.cpp.o" "gcc" "src/CMakeFiles/mydbms.dir/db/schema.cpp.o.d"
   )
 
 # Targets to which this target links which contain Fortran sources.
