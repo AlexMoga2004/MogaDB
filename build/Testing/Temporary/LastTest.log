@@ -1,10 +1,10 @@
-Start testing: Jun 21 11:04 BST
+Start testing: Jun 22 00:03 BST
 ----------------------------------------------------------
 1/2 Testing: PageTests
 1/2 Test: PageTests
 Command: "/Users/user/Programming/mogadb/build/tests/test_page"
 Directory: /Users/user/Programming/mogadb/build/tests
-"PageTests" start time: Jun 21 11:04 BST
+"PageTests" start time: Jun 22 00:03 BST
 Output:
 ----------------------------------------------------------
 test_insert_and_get passed
@@ -12,10 +12,10 @@ test_multiple_inserts passed
 test_delete_and_reuse_slot passed
 All tests passed ✅
 <end of output>
-Test time =   0.34 sec
+Test time =   0.00 sec
 ----------------------------------------------------------
 Test Passed.
-"PageTests" end time: Jun 21 11:04 BST
+"PageTests" end time: Jun 22 00:03 BST
 "PageTests" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -23,7 +23,7 @@ Test Passed.
 2/2 Test: SchemaTests
 Command: "/Users/user/Programming/mogadb/build/tests/test_schema"
 Directory: /Users/user/Programming/mogadb/build/tests
-"SchemaTests" start time: Jun 21 11:04 BST
+"SchemaTests" start time: Jun 22 00:03 BST
 Output:
 ----------------------------------------------------------
 Starting all database schema tests...
@@ -48,13 +48,50 @@ Schema::get_relation: PASSED
 Schema::remove_relation: PASSED
 --- Schema Class Tests Complete ---
 
+--- Testing Error Handling for Invalid Inputs ---
+Testing PrimaryKeyConstraint with duplicate columns...
+Caught expected error: Primary key columns must be unique - PASSED
+Testing ForeignKeyConstraint with mismatched sizes...
+Caught expected error: Foreign key columns must match referenced columns in size - PASSED
+Testing ForeignKeyConstraint with duplicate FK columns...
+Caught expected error: Foreign key columns must be unique - PASSED
+Testing ForeignKeyConstraint with duplicate referenced columns...
+Caught expected error: Referenced columns in foreign key must be unique - PASSED
+Testing Relation with empty name...
+Caught expected error: Relation name cannot be empty - PASSED
+Testing Relation with empty columns...
+Caught expected error: Relation must have at least one column - PASSED
+Testing Relation with duplicate internal column names...
+Caught expected error: Column names must be unique - PASSED
+Testing Relation with PK column not found...
+Caught expected error: Primary key column 'non_existent_col' does not exist in the relation - PASSED
+Testing Relation with multiple PKs...
+Caught expected error: Relation can have only one primary key - PASSED
+Testing Relation with FK column not found...
+Caught expected error: Foreign key column 'non_existent_fk' does not exist in the relation - PASSED
+Testing Relation with Uniqueness constraint column not found...
+Caught expected error: Uniqueness constraint column 'non_existent_uniq' does not exist in the relation - PASSED
+Testing Relation with NotNull constraint column not found...
+Caught expected error: Not null constraint column 'non_existent_nn' does not exist in the relation - PASSED
+Testing Schema with duplicate initial relations...
+Caught expected error: Duplicate relation name: SameName - PASSED
+Testing Schema with non-existent referenced table...
+Caught expected error: Foreign key column 'non_existent_fk_col' does not exist in the relation - PASSED
+Testing Schema with FK type mismatch...
+Caught expected error: Type mismatch between foreign key column 'user_id_fk' and referenced column 'user_id' - PASSED
+Testing Schema with FK referencing non-PK...
+Caught expected error: Referenced column 'dept_id' must be a primary key in the referenced table - PASSED
+Testing Schema::add_relation with duplicate name...
+Caught expected error: Relation with name 'ExistingTable' already exists - PASSED
+--- Error Handling Tests Complete ---
+
 All tests passed successfully!
 <end of output>
-Test time =   0.27 sec
+Test time =   0.01 sec
 ----------------------------------------------------------
 Test Passed.
-"SchemaTests" end time: Jun 21 11:04 BST
+"SchemaTests" end time: Jun 22 00:03 BST
 "SchemaTests" time elapsed: 00:00:00
 ----------------------------------------------------------
 
-End testing: Jun 21 11:04 BST
+End testing: Jun 22 00:03 BST
