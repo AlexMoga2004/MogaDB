@@ -1,0 +1,22 @@
+Start testing: Jun 21 03:33 BST
+----------------------------------------------------------
+1/1 Testing: PageTests
+1/1 Test: PageTests
+Command: "/Users/user/Programming/mogadb/build/tests/test_page"
+Directory: /Users/user/Programming/mogadb/build/tests
+"PageTests" start time: Jun 21 03:33 BST
+Output:
+----------------------------------------------------------
+test_insert_and_get passed
+test_multiple_inserts passed
+test_delete_and_reuse_slot passed
+All tests passed ✅
+<end of output>
+Test time =   0.33 sec
+----------------------------------------------------------
+Test Passed.
+"PageTests" end time: Jun 21 03:33 BST
+"PageTests" time elapsed: 00:00:00
+----------------------------------------------------------
+
+End testing: Jun 21 03:33 BST

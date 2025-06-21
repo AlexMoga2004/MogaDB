@@ -1,0 +1,11 @@
+/Users/user/Programming/mogadb/build/CMakeFiles/test.dir
+/Users/user/Programming/mogadb/build/CMakeFiles/edit_cache.dir
+/Users/user/Programming/mogadb/build/CMakeFiles/rebuild_cache.dir
+/Users/user/Programming/mogadb/build/src/CMakeFiles/mydbms.dir
+/Users/user/Programming/mogadb/build/src/CMakeFiles/test.dir
+/Users/user/Programming/mogadb/build/src/CMakeFiles/edit_cache.dir
+/Users/user/Programming/mogadb/build/src/CMakeFiles/rebuild_cache.dir
+/Users/user/Programming/mogadb/build/tests/CMakeFiles/test_page.dir
+/Users/user/Programming/mogadb/build/tests/CMakeFiles/test.dir
+/Users/user/Programming/mogadb/build/tests/CMakeFiles/edit_cache.dir
+/Users/user/Programming/mogadb/build/tests/CMakeFiles/rebuild_cache.dir

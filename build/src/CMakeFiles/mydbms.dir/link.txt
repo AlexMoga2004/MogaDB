@@ -1,0 +1,2 @@
+/Library/Developer/CommandLineTools/usr/bin/ar qc libmydbms.a CMakeFiles/mydbms.dir/db/page.cpp.o
+/Library/Developer/CommandLineTools/usr/bin/ranlib libmydbms.a
